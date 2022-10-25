@@ -1,0 +1,16 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+     css/bootstrap.min.css: {}
+     css/style.css: {}
+     css/main.css: {}
+     css/jquery.bxslider.min.css: {}
+     css/color.css: {}
+      
+  js:
+    theme:
+      js/jQuery.min.js: {}
+      js/custom.js: {}
+    dependencies:
+      - core/jquery 

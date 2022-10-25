@@ -1,0 +1,202 @@
+.top-bar{
+  background: #e8e9e9;;
+}
+
+.navbar-main,.footer-main__copyright{
+  background: #000000;
+}
+
+.slideshow-container__contentBg{
+  background: #000000;
+  opacity: 0.7;
+}
+.page-sidebar nav.navigation ul > li{
+  background: #000000;
+}
+.whatWeDo-container__content ul.tabs-whatWeDo li.current{
+  background: #000000;
+}
+
+
+/* -----------primary color------------ */
+.btn-red {
+  background: #cf3339;
+  border-color: #cf3339;
+  color: #ffffff;
+}
+.pojo-a11y-toolbar-toggle{
+  background-color: #cf3339;
+}
+.slideshow-container__actionBtns .field--type-link a{
+  border-color: #cf3339;
+  background-color: #cf3339;
+}
+.services-container{
+  background: #cf3339;
+}
+.latest-updates__content-indent p a:hover{
+  color: #cf3339;
+}
+.footer-main #newslettersignup-form::after{
+  background-color: #cf3339;
+}
+.tb-megamenu .nav > li.active > a, 
+.tb-megamenu .nav > li:hover > a,
+.mega-dropdown-menu li:hover > a,
+.tb-megamenu .nav > li:hover > span.tb-megamenu-no-link {
+  border-bottom-color: #cf3339;
+}
+.page-sidebar nav.navigation ul a:hover, .page-sidebar nav.navigation ul a.is-active {
+  font-weight: 500;
+  color: #fff;
+  background-color: #cf3339;
+}
+.tb-megamenu .nav li.dropdown.active > .dropdown-toggle, .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, .tb-megamenu .nav > li.dropdown.open.active > a:hover, .tb-megamenu .nav > li.dropdown.open.active > span.tb-megamenu-no-link:hover {
+	border-color: #cf3339 !important;
+}
+.whatWeDo-container__action-btns .btn:hover{
+  color: #cf3339;
+}
+
+/* 
+
+.our-services::before{
+  background:#cf3339;
+}
+.our-services__desc p a,.latest-updates__content-indent p a,.upcoming-events__content a{
+  color: #cf3339;
+}
+
+.vision-container__item:hover .spin-icon,.whatWeDo-container__content{
+  background:#cf3339; 
+}
+.whatWeDo-container .btn-green:hover a{
+  color: #cf3339;
+}
+.our-services__list-item:hover .spin-icon{
+  background:#cf3339;
+}
+.page-sidebar nav.navigation ul > li ul li{
+  background: #cf3339;
+}
+.footer-main #newslettersignup-form::after{
+  background-color: #cf3339;
+} */
+
+/* ------Secondry Color--------- */
+
+.tb-megamenu .dropdown-menu li > a:hover, .tb-megamenu .dropdown-menu li > a:focus, .tb-megamenu .dropdown-submenu:hover > a, .tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:hover, .tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:focus, .tb-megamenu .dropdown-submenu:hover > span.tb-megamenu-no-link {
+	color: #00a551;
+}
+.tb-megamenu .dropdown-menu{
+  border-bottom-color: #00a551 !important;
+}
+.slideshow-container__content h2{
+  color: #00a551;
+}
+.field--name-field-second-button.field--type-link a,.latest-updates__content-indent p a{
+  color: #00a551;
+}
+.btn-red:hover {
+  background: #00a551;
+  border-color: #00a551;
+  color: #ffffff;
+}
+.our-services__item,.whatWeDo-container__content .tab-content{
+  background:#00a551;
+}
+.ckeditor-accordion-container > dl dt > a {
+  background-color: #00a551 !important;
+  border-bottom: 1px solid #00a551  !important;
+  color: #ffffff !important;
+}
+.ckeditor-accordion-container > dl dt > a:hover {
+  background-color: #00a551 !important;
+}
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: #00a551 !important;
+}
+.ckeditor-accordion-container > dl{
+  border: 1px solid #00a551 !important;
+}
+a.ckeditor-tab{
+  color: #00a551 !important;
+}
+
+.page-document .region-content .node--view-mode-full a,
+.page-document .region-content .node--view-mode-full a span 
+.page-document .node--type-image a, .page-document .node--type-image a span{
+  color: #00a551;
+}
+.page-document .node--type-image h2{
+  color: #00a551;
+}
+.site-breadcrumd a:hover{
+  color: #00a551;
+}
+
+
+.latest-updates__post-date, .whoWeAre-container__downloads,.whoWeAre-container__btns .btn,.latest-updates__post-date{
+background: #f8bb2b;
+}
+
+
+/* -----------Footer Color------------ */
+
+.footer-main{
+background-color: #484647 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

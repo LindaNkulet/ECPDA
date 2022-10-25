@@ -1,0 +1,105 @@
+/*
+	Tabber tabs that have not been created using Javascript
+*/
+
+/* clearfix */
+dl.ckeditor-tabber-vertical:before,
+dl.ckeditor-tabber-vertical:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+dl.ckeditor-tabber-vertical:after {
+    clear: both;
+}
+
+/* CKEditor Tabber */
+dl.ckeditor-tabber-vertical,
+dl.ckeditor-tabber-vertical dt,
+dl.ckeditor-tabber-vertical  dd {
+	box-sizing: border-box;
+}
+dl.ckeditor-tabber-vertical {
+	position: relative;
+}
+
+dl.ckeditor-tabber-vertical dt {
+	font-weight: bold;
+}
+
+/*
+	Tabber tabs that have been created using Javascript
+*/
+
+/* clearfix */
+.ckeditor-tabber-vertical-tabs:before,
+.ckeditor-tabber-vertical-tabs:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.ckeditor-tabber-vertical-tabs:after {
+    clear: both;
+}
+
+.ckeditor-tabber-vertical-tabs {
+	margin: 20px 0;
+	box-sizing: border-box;
+}
+
+.ckeditor-tabber-vertical-tabs * {
+	box-sizing: border-box;
+}
+
+/* tabs to switch visible content */
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder,
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder {
+	position: relative;
+	z-index: 2;
+}
+
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder li {
+	display: inline-block;
+	border-right: 1px solid transparent;
+	border-left: 1px solid transparent;
+}
+
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder li a {
+	padding: 10px 15px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder li.active {
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+    background: #fff;
+}
+
+.ckeditor-tabber-vertical-tabs ul.ckeditor-tabs-holder li.active a {
+	cursor: default;
+}
+
+/* the tabbed content itself */
+.ckeditor-tabber-vertical-tabs .ckeditor-tabs-content-holder {
+	border: 1px solid #999;
+	background: #fff;
+	position: relative;
+	margin-top: -1px;
+	z-index: 1;
+}
+
+.ckeditor-tabber-vertical-tabs .ckeditor-tabs-content-holder .ckeditor-tab-content {
+	margin: 15px;
+	display: none;
+}
+
+.ckeditor-tabber-vertical-tabs .ckeditor-tabs-content-holder .ckeditor-tab-content.active {
+	display: block;
+}

@@ -1,0 +1,153 @@
+.footer-main {
+	background: $darker_alt3;
+
+	&__footer-indent {
+		padding: 60px 0;
+		display: flex;
+
+		h4 {
+			@extend .sub-title-lg2;
+			font-weight: $semibold;
+			margin: 0;
+			padding: 0 0 35px 0;
+			color: $white;
+			text-transform: none;
+
+			&.pad-t30 {
+				margin: 0;
+				padding: 30px 0 35px 0;
+			}
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+				background: url("../img/green-bullet.svg") 0 6px no-repeat;
+				padding: 0 0 20px 18px;
+
+				a {
+					@include font-size(16px);
+					line-height: 22px;
+					color: $white;
+					text-decoration: none;
+					@include transition();
+
+					&:hover {
+						color: $primary;
+					}					
+				}
+			}
+		}
+	}
+
+	&__address {
+		width: 402px;
+
+		p {
+			@include font-size(16px);
+			line-height: 28px;
+			color: $white;
+			margin: 0;
+			padding: 45px 0 0 0;
+		}
+	}
+
+	&__links-col {
+		flex: 1;
+		padding: 0 0 0 50px;
+
+		&__links-col2 {
+			padding-left: 20px;
+		}
+	}
+
+	&__newsletter-signup {
+		width: 324px;
+		margin-left: 110px;
+
+		&--text {
+			@include font-size(16px);
+			line-height: 23px;
+			color: $white;
+			background: url("../img/envelop.svg") 0 0 no-repeat;
+			padding: 0 0 0 44px;
+		}
+
+		&--icons {
+			display: flex;
+			align-items: center;
+			padding: 55px 0 0 0;
+
+			img {
+				padding: 0 10px 0 0;
+				@include transition();
+
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
+
+		form {
+			margin: 25px 0 0 0;
+			padding: 0;
+			display: flex;
+			background: $white;
+			border: 1px solid $light_gray2;
+			border-radius: 4px;
+			overflow: hidden;
+
+			input[type='text'] {
+				background: none;
+				color: $darker;
+				border: 0;
+				flex: 1;
+				padding: 4px 15px;
+				@include font-size(12px);
+
+				&:focus {
+					border: 0;
+					box-shadow: none;
+					outline: 0;
+				}
+			}
+
+			button {
+				width: 40px;
+				height: 42px;
+				background: $redDarker;
+				border: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include transition();
+
+				&:hover {
+					background: $primary;
+				}
+			}
+		}
+	}
+
+	&__logo-lg {
+		padding: 30px 0 0 0;
+	}
+
+	&__copyright {
+		background: $darker_alt4;
+		padding: 8px 0;
+
+		&__text {
+			@include font-size(16px);
+			color: $white;
+		}
+
+		&__logo {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}

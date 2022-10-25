@@ -1,0 +1,137 @@
+.gsc-carousel-content{
+   .owl-dots{
+      margin: 0 auto;
+      position: absolute;
+      z-index: 11;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+   }
+  .content-image{
+      min-width: 100%;
+      min-height: 100%;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      background-position: 50% 0;
+      background-size: cover;
+      -ms-background-size: cover;
+      -webkit-background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      height: 100%;
+      position: relative;
+      vertical-align: middle;
+      width: 100%;
+      z-index: 2;
+      min-height: 400px;
+      @include media-breakpoint-down(md){
+         height: 350px!important;
+         min-height: 350px!important;
+      }
+      @include media-breakpoint-down(sm){
+         height: 320px!important;
+         min-height: 320px!important;
+      }
+   }
+  .item{
+      .item-content{
+         position: relative;
+         .content-box-wrapper{
+           position: absolute;
+           left: 0;
+           top: 50%;
+           margin-top: -100px;
+           width: 100%;
+           z-index: 9;
+            .content-box{
+               max-width: 670px;
+               margin: 0 auto;
+              .content-inner{
+               text-align: center;
+                  .caption-title{
+                     font-size: 42px;
+                     font-family: $font-second;
+                     font-weight: 900;
+                     margin-bottom: 12px;
+                     line-height: 1.2;
+                     @include media-breakpoint-down(md){
+                        font-size: 32px;
+                     }
+                     @include media-breakpoint-down(sm){
+                        font-size: 28px;
+                     }
+                  }
+                  .caption-description{
+                     font-size: 16px;
+                     margin-bottom: 20px;
+                     font-family: $font-second;
+                  }
+                  .slider-action{
+
+                  }
+              }
+            }
+            &.style-1{
+               .content-box{
+                  .caption-title{
+                     a{
+                        color: $white;
+                        &:hover{
+                           text-decoration: underline;
+                        }
+                     }
+                  }
+                  .caption-description{
+                     color: $white;
+                  }
+               }
+            }
+         }
+      }
+   }
+   .caption-title {
+      -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+      -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+      -ms-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+      -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+      transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
+   }
+   .caption-description {
+      -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+      -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+      -ms-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+      -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+      transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 0.9s;
+   }
+   .slider-action {
+      margin-top: 15px;
+      -webkit-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+      -moz-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+      -ms-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+      -o-transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+      transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+   }
+   .gavias-default_anim .caption-title,
+   .gavias-default_anim .caption-description,
+   .gavias-default_anim .slider-action {
+      -webkit-transform: translate(0, 70px);
+      -moz-transform: translate(0, 70px);
+      -ms-transform: translate(0, 70px);
+      -o-transform: translate(0, 70px);
+      transform: translate(0, 70px);
+      ms-transform: translate(0, 70px);
+      @include opacity(0);
+    }
+   .active .gavias-default_anim {
+      .caption-title, .caption-description, .slider-action {
+         -webkit-transform: translate(0, 0);
+         -moz-transform: translate(0, 0);
+         -ms-transform: translate(0, 0);
+         -o-transform: translate(0, 0);
+         transform: translate(0, 0);
+         ms-transform: translate(0, 0);
+         @include opacity(1);
+      }
+   }
+}

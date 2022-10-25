@@ -1,0 +1,36 @@
+name: Mbuni
+type: theme
+description: '3rd Theme for Ministry'
+package: Other
+core_version_requirement: ^8 || ^9
+sceenshot: screenshot.png
+libraries:
+  - ministry3/global-styling
+  - ministry3/global-script
+base theme: classy
+
+regions:
+  ab: ab
+  language: Language
+  top_header: Top Header
+  social_icon: Social Links
+  useraccount: User Account
+  logo: Site Logo
+  navigation: Main Navigation
+  breadcrumb: Breadcrumb
+  hero_slider: Hero Slider
+  Who_we_are: Who we are
+  services: Services
+  vision: Our Vision
+  department: Department
+  feature_panel: Feature Panel
+  news: News 
+  events: Events
+  content: Content
+  sidebar: Sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_fourth: Footer Fourth
+  footer_bottom_left: Footer Bottom Copyright
+  footer_bottom_right: Footer Bottom Logo

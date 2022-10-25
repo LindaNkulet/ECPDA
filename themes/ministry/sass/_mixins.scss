@@ -1,0 +1,113 @@
+// Font-size
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return $remSize * 1rem;
+}
+  
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+// Margin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// Padding
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+// Center
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Transition
+@mixin transition($time: .4s) {
+  position: relative;
+  transition: all ease-in-out $time;
+}
+
+// Fill-Blue
+@mixin fillGreen($color: #ffffff) {
+  background: $primary;
+  border-color: $primary;
+  color: $color;
+}
+
+// Fill-Red
+@mixin redFill($color: #ffffff) {
+  background: $redDarker;
+  border-color: $redDarker;
+  color: $color;
+}
+
+// Fill-White
+@mixin fillWhite($color: $redDarker) {
+  background: $white;
+  border-color: $white;
+  color: $color;
+}
+
+// Fill-darker
+@mixin fillDarker($color: $white) {
+  background: $darker;
+  border-color: $darker;
+  color: $color;
+}
+
+
+// Media Rules
+@mixin screen($size) {
+  $desktopL: "(min-width: 1440px)";
+  $desktopML: "(min-width: 1380px)";
+  $desktopM: "(min-width: 1200px)";
+  $desktopS: "(min-width: 1024px)";
+  $tablet: "(min-width: 768px) and (max-width: 1023px)";
+  $mobile: "(max-width: 767px)";
+  @if $size == desktopL {
+    @media only screen and #{$desktopL} {
+      @content;
+    }
+  }
+  @else if $size == desktopML {
+    @media only screen and #{$desktopML} {
+      @content;
+    }
+  }
+  @else if $size == desktopM {
+    @media only screen and #{$desktopM} {
+      @content;
+    }
+  }
+  @else if $size == desktopS {
+    @media only screen and #{$desktopS} {
+      @content;
+    }
+  }
+  @else if $size == tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  }
+  @else if $size == mobile {
+    @media only screen and #{$mobile} {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and #{$size} {
+      @content;
+    }
+  }
+}

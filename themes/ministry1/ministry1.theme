@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ */
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Entity\EntityForm;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\GeneratedLink;
+use Drupal\Core\Link;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
+use Drupal\media\MediaForm;
+use Drupal\file\FileInterface;
+use Drupal\views\Form\ViewsForm;
+use Drupal\Core\Database\Database;
+use Drupal\views\ViewExecutable;
+use Drupal\file\Entity\File;
+use Drupal\media\Entity\Media;
+
+
+function ministry1_preprocess_node(&$vars){
+ //print_r($vars);
+ // $vars['content']['region'] = $vars;// $vars['elements']['#block']->region;
+}
+
+function ministry1_preprocess_page(&$variables) {
+  $site_config = \Drupal::config('system.site');
+  $variables['site_name'] = $site_config->get('name');
+  $variables['site_slogan'] = $site_config->get('slogan');
+
+  // logo needs to be placed within specified folder
+  $variables['logopath'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+
+}

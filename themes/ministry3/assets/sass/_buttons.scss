@@ -1,0 +1,62 @@
+// Buttons
+.btn-default-style {
+	@include font-size(20px);
+	font-weight: $semibold;
+	line-height: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 56px;
+	border-radius: 6px;
+	padding: 0 30px;
+	@include transition();
+}
+
+.btn-red {
+	background: $redDarker;
+	border-color: $redDarker;
+	color: $white;
+	@extend .btn-default-style;
+
+	&:hover {
+		@include fillGreen();
+	}
+}
+
+.btn-green {
+	background: $primary;
+	border-color: $primary;
+	color: $white;
+	@extend .btn-default-style;
+
+	&:hover {
+		@include redFill();
+	}
+}
+
+.btn-white {
+	background: $white;
+	border-color: $white;
+	color: $primary;
+	@extend .btn-default-style;
+
+	&:hover {
+		@include redFill();
+	}
+}
+
+.btn-lg {
+	@include font-size(22px);
+}
+
+.btn-md {
+	@include font-size(20px);
+}
+
+.btn-sm {
+	@include font-size(18px);
+}
+
+.full-width {
+	width: 100%
+}

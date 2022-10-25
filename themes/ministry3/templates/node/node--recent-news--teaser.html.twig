@@ -1,0 +1,19 @@
+
+            <div class="latest-updates__item blog-item">
+                <div class="latest-updates__img">
+                    {{content.field_image}}
+                </div>
+                <div class="latest-updates__content">
+                    <div class="latest-updates__content-indent">								
+                        <div class="latest-updates__post-date">
+                            <div class="latest-updates__post-date-indent">
+                                {{content.field_date[0]['#markup'] |date('d')}}
+                                <span>{{content.field_date[0]['#markup'] |date('M')}}</span>
+                            </div>
+                        </div>
+                        <div class="latest-updates__author">By admin</div>
+                        <div class="latest-updates__blog-title">{{label}}</div>
+                        <p><a href="{{url}}">Learn More</a></p>
+                    </div>
+                </div>
+            </div>

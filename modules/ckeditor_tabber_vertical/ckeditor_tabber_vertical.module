@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function ckeditor_tabber_vertical_page_attachments_alter(array &$page) {
+  // Attaches css assets globally. 
+  $page['#attached']['library'][] = 'ckeditor_tabber_vertical/semantic_tab_vertical';
+}

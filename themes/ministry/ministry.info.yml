@@ -1,0 +1,38 @@
+name: Nyuki
+type: theme
+description: 'Second Theme for this website.'
+package: Other
+core_version_requirement: ^8 || ^9
+sceenshot: screenshot.png
+libraries:
+  - ministry/global-styling
+  - ministry/global-script
+base theme: classy
+
+regions:
+  ab: ab
+  language: Language
+  top_header: Top Header
+  social_icon: Social Links
+  useraccount: User Account
+  logo: Site Logo
+  navigation: Main Navigation
+  breadcrumb: Breadcrumb
+  hero_slider: Hero Slider
+  services: Services
+  Who_we_are: Who we are
+  vision: Our Vision
+  department: Department
+  news: News 
+  events: Events
+  content: Content
+  sidebar: Sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_fourth: Footer Fourth
+  footer_fifth_top: Footer Fifth top
+  footer_fifth: Footer Fifth newsletter
+  footer_fifth_Social: Footer Fifth Social
+  footer_bottom_left: Footer Bottom Copyright
+  footer_bottom_right: Footer Bottom Logo

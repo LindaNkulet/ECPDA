@@ -1,0 +1,205 @@
+.top-header,.bg-black{
+  background-color: #000000 !important;
+}
+.slider-box .read-mr{
+  background: #000000;
+}
+.btn-grey:hover{
+  background-color: #000000;
+}
+.page-sidebar nav.navigation ul a:hover,
+ .page-sidebar nav.navigation ul a.is-active {
+	font-weight: 500;
+	color: #fff;
+  background-color: #000000;
+} 
+
+
+/* -----------primary color------------ */
+
+.top-header .right-content .btn-report,.slider-1 .btn-box a,.section1 .btn-red,
+.btn-primary{
+  background:#cf3339;
+}
+.header-main {
+  border-top: 5px solid #cf3339;
+}
+.tb-megamenu .nav > .active > a,
+.tb-megamenu .nav > .active > a:hover,
+.tb-megamenu .nav > .active > a:focus,
+.tb-megamenu .nav > .active > span.tb-megamenu-no-link,
+.tb-megamenu .nav > .active > span.tb-megamenu-no-link:hover,
+.tb-megamenu .nav > .active > span.tb-megamenu-no-link:focus,
+.tb-megamenu .nav > li:hover > a {
+  background-color: transparent !important;
+  border-bottom-color: #cf3339 !important;
+  color: #cf3339 !important;
+}
+
+.tb-megamenu .dropdown-menu li > a:hover,
+.tb-megamenu .dropdown-menu li > a:focus,
+.tb-megamenu .dropdown-submenu:hover > a,
+.tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:hover,
+.tb-megamenu .dropdown-menu li > span.tb-megamenu-no-link:focus,
+.tb-megamenu .dropdown-submenu:hover > span.tb-megamenu-no-link {
+  background-color: inherit;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  color: #cf3339;
+  text-decoration: none;
+}
+.tb-megamenu .nav > li.active > a, 
+.tb-megamenu .nav > li:hover > a,
+.mega-dropdown-menu li:hover > a,
+.tb-megamenu .nav > li:hover > span.tb-megamenu-no-link  {
+    border-bottom-color: #cf3339;
+    color: #cf3339; 
+    cursor: pointer;
+}
+.tb-megamenu .dropdown-menu {
+  border-bottom-color: #cf3339 !important;
+}
+
+.pojo-a11y-toolbar-toggle{
+  background-color:#cf3339;
+}
+.slider-1 .small-text{
+  border-bottom: 4px solid #cf3339;
+}
+.section4 .nav-tabs .nav-item.show .nav-link, .section4 .nav-tabs .nav-link.active, .section4 .nav-tabs .nav-link:hover {
+	background-color: #cf3339 !important;
+}
+.section4 .slide-tt::after,.section4 .slide-tt::before,.section4 .btn-tab1,.section5 .btn-red {
+  background: #cf3339;
+}
+.section6 .btn-1{
+  color: #cf3339;
+  border-bottom: 2px solid #cf3339;
+}
+.btn-primary {
+  border-color: #cf3339;
+}
+.section1 .btn-red,
+.btn-primary {
+  background: #cf3339;
+}
+.tb-megamenu .nav li.dropdown.open > .dropdown-toggle {
+  color: #cf3339;
+}
+.page-sidebar nav.navigation ul > li{
+  background: #cf3339;
+}
+
+/* ------Secondry Color--------- */
+.slider-box .box-1,.section2{
+  background: #00a551;
+}
+.section1 .small-tt,.section5 .small-tt,.section6 .small-tt,.section7 .small-tt{
+  color: #00a551;
+}
+.section1 .title::after,.section1 .title::before,.section5 .title::after,.section5 .title::before,.section6 .title::after,
+.section6 .title::before,.section7 .title::after,.section7 .title::before{
+  background: #00a551;
+}
+.section5 .main-box-img{
+  border-bottom: 5px solid #00a551;
+}
+.footer-social a:hover{
+  background-color: #00a551;
+}
+.btn-primary:hover {
+  background: #00a551;
+  border-color: #00a551;
+}
+.ckeditor-accordion-container > dl dt > a {
+  background-color: #00a551 !important;
+  border-bottom: 1px solid #00a551  !important;
+  color: #FFFFFF !important;
+}
+
+.ckeditor-accordion-container > dl dt > a:hover {
+  background-color: #00a551 !important;
+}
+.ckeditor-accordion-container > dl dt.active > a {
+  background-color: #00a551 !important;
+}
+.ckeditor-accordion-container > dl{
+  border: 1px solid #00a551 !important;
+}
+a.ckeditor-tab{
+  color: #00a551 !important;
+}
+
+.page-document .region-content .node--view-mode-full a,
+.page-document .region-content .node--view-mode-full a span 
+.page-document .node--type-image a, .page-document .node--type-image a span{
+  color: #00a551;
+}
+.page-document .node--type-image h2{ font-size: 26px; font-weight: 600; color: #00a551;}
+.site-breadcrumd a:hover{
+  color: #00a551;
+}
+
+
+/* -----------Footer Color------------ */
+
+.bg-dark{
+background-color: #484647 !important;
+}
+.btn-grey{
+  background-color: #484647;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

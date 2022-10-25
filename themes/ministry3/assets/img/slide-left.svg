@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+  <defs>
+    <filter id="Ellipse_38" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2589" data-name="Group 2589" transform="translate(-31 -500)">
+    <g transform="matrix(1, 0, 0, 1, 31, 500)" filter="url(#Ellipse_38)">
+      <circle id="Ellipse_38-2" data-name="Ellipse 38" cx="40" cy="40" r="40" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_ionic-ios-arrow-forward" data-name="Icon ionic-ios-arrow-forward" d="M16.778,22.237,28.922,10.1a2.284,2.284,0,0,0,0-3.239,2.313,2.313,0,0,0-3.249,0L11.915,20.612a2.289,2.289,0,0,0-.067,3.163L25.664,37.62a2.294,2.294,0,0,0,3.249-3.239Z" transform="translate(57.882 523.757)" fill="#00a551"/>
+  </g>
+</svg>

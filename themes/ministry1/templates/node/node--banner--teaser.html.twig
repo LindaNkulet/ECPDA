@@ -1,0 +1,37 @@
+                    
+       {# <div class="carousel-item-content" style="background-image:url({{file_url(content.field_image['#items'].entity.uri.value)}})">
+                <div class="col-md-12">
+                    <div class="content">
+                        <span class="small-text">{{label}}</span>
+                        <h1 class="title1">{{content.field_content}}
+                        </h1>
+                        <div class="btn-box">
+                           
+                            {{content.field_first_button}}
+                            {{content.field_second_button}}
+                           
+                        </div>
+                    </div>
+                </div>
+            </div> #}
+       
+<div class="carousel-item-content" style="background-image:url({{file_url(content.field_image['#items'].entity.uri.value)}})">
+                <div class="col-md-12">
+                    <div class="content">
+                        <span class="small-text">{{label}}</span>
+                        <h1 class="title1">{{content.field_content}}
+                        </h1>
+                        <div class="btn-box">
+                            {# <a href="#"></a> #}
+                            <div>{{content.field_first_button}}</div>
+                            <div>{{content.field_second_button}}</div>
+                            
+                            {# <a href="#" class="clr-bg">Staff Mail</a> #}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+          
+                   

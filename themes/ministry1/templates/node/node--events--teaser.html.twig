@@ -1,0 +1,26 @@
+                    {# <div class="col-6"> #}
+                        <div class="bg-light border p-5 position-relative overflow-hidden">
+                            <h3 class="font-weight-bold text-dark mb-4">{{label}}
+                            </h3>
+                            <div class="row">
+                                <div class="col-9">
+                                    <div class="event-head border-bottom border-dark pb-3 mb-4">
+                                        <div class="d-inline-flex">
+                                            <span class="mr-3"><img width="18" class="mr-1" src="themes/ministry1/images/calendar.png"
+                                                    alt=""> <span>
+                                                    {{content.field_date[0]['#markup'] |date('M Y')}}</span></span>
+                                            <span class="mr-3"><span class=""><i
+                                                        class="far fa-clock me-1 position-relative"></i></span><span>
+                                                    {{ content.field_event[0]['#markup']  |date('H:i a') }}</span></span>
+                                            <span><img class="mr-1" src="themes/ministry1/images/map-pin.svg" alt=""><span>{{content.field_location.0}}</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4 pr-5">{{content.field_event_detail}}
+                                    </div>
+                                    <div class="mb-3"><a href="{{url}}" class="btn btn-primary">View Event</a></div>
+                                </div>
+                                <div style="background-image:url({{file_url(content.field_image['#items'].entity.uri.value)}})" class="event-image bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    {# </div> #}

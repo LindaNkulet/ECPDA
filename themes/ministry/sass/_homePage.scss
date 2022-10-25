@@ -1,0 +1,470 @@
+.our-services {
+	position: relative;
+	padding: 50px 0 0 0;
+
+	&::before {
+		content: "";
+		width: 100%;
+		height: 64.1%;
+		background: $redDarker;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 10;
+	}
+
+	.container {
+		position: relative;
+		z-index: 20;
+	}
+	
+	&__subtitle {
+		@extend .sub-title-lg;
+		color: $white;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	&__title {
+		@extend .title-lg;
+		color: $white;
+		text-align: center;
+	}
+
+	&__list {
+		display: flex;
+		margin: 0 -7px;
+		padding: 50px 0 0 0;
+	}
+
+	&__list-item {
+		padding: 0 7px;
+
+		&:hover {
+			.spin-icon {
+				background: $redDarker;
+				transform: rotate(-360deg);
+				// transform: scale(1.2);
+			}
+		}
+	}
+
+	&__list-img {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		padding: 0 14px 14px 14px;
+		margin-top: -20px;
+	}
+
+	&__desc {
+		padding: 45px 30px 18px 30px;
+		background: $white;
+		position: relative;
+		box-shadow: 0 0 5px $darker_16;
+
+		h3 {
+			@include font-size(24px);
+			font-weight: $semibold;
+			color: $darker;
+			text-align: center;
+			margin: 0;
+			padding: 5px 0 0 0;
+		}
+
+		p {
+			@include font-size(16px);
+			line-height: 22px;
+			color: $darker;
+			text-align: center;
+			margin: 0;
+			padding: 20px 0 0 0;
+
+			a {
+				color: $redDarker;
+				font-weight: $semibold;
+				text-decoration: underline;
+				@include transition();
+				padding-top: 10px;
+
+				&:hover {
+					color: $primary;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&__icon {
+		@include transition();
+		width: 84px;
+		height: 84px;
+		border-radius: 50%;
+		background: $primary;
+		border: 5px solid $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		position: absolute;
+		top: calc(-96px/2);
+		left: 0;
+		right: 0;
+	}
+}
+
+
+// Who we are - section
+.whoWeAre-container {
+	padding: 80px 0 110px 0;
+
+	&__subtitle {
+		@extend .sub-title-lg;
+	}
+
+	&__title {
+		@extend .title-lg;
+	}
+
+	&__img {
+		padding-right: 30px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__content {
+		padding-left: 60px;
+
+		p {
+			@include font-size(22px);
+			line-height: 30px;
+			color: $darker_alt;
+			padding: 32px 0 0 0;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0 0 40px 0;
+			display: flex;
+			flex-wrap: wrap;
+
+			li {
+				list-style: none;
+				width: calc(100%/2 - 32px);
+				margin: 30px 30px 0 0;
+				padding: 0 0 0 28px;
+				position: relative;
+				@include font-size(21px);
+				color: $darker_alt;
+				font-weight: $semibold;
+
+				&::before {
+					content: "";
+					background: url("../img/bullet-green.svg") 0 0 no-repeat;
+					width: 8px;
+					height: 8px;
+					position: absolute;
+					top: 5px;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+// Our Vision and Mission - section
+.vision-container {
+	width: 100%;
+	background: url("../img/map-bg.png") center top no-repeat;
+	background-size: cover;
+	min-height: 590px;
+	padding: 90px 0;
+	
+	&__item {
+		position: relative;
+
+		&:hover {
+			.spin-icon {
+				transform: rotate(-360deg);
+				background: $redDarker;
+			}
+		}
+	}
+
+	&__title {
+		@include font-size(28px);
+		line-height: 38px;
+		color: $darker;
+		font-weight: $bold;
+		text-align: center;
+		padding-bottom: 90px;
+	}
+
+	&__content {
+		background: $white;
+		border-radius: 8px;
+		border: 2px solid $primary;
+		padding: 24px;
+		position: relative;
+		min-height: 246px;
+
+		p {
+			@extend .paragraph-style;
+			margin: 0;
+			padding: 50px 0 0 0;
+			text-align: center;
+		}
+	}
+
+	&__icon {
+		width: 122px;
+		height: 122px;
+		background: $primary;
+		border: 5px solid $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		@include transition();
+		position: absolute;
+		border-radius: 50%;
+		top: calc(-132px/2);
+		left: 0;
+		right: 0;
+	}
+}
+
+// What we do - section
+.whatWeDo-container {
+	background: url("../img/what-we-do-bg.png") center top no-repeat;
+	min-height: 520px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+	&__content {
+		position: absolute;
+		width: 785px;
+		min-height: 410px;
+		background: $redDarker;
+		padding: 34px 160px 34px 38px;
+		margin-bottom: -40px;
+
+		p {
+			@extend .paragraph-style2;
+			color: $white;
+			margin: 0;
+			padding: 28px 0 0 0;
+		}
+	}
+
+	&__subtitle {
+		@extend .sub-title-lg;
+		color: $white;
+	}
+
+	&__title {
+		@extend .title-lg;
+		color: $white;
+		padding: 8px 0 0 0;
+	}
+
+	&__action-btns {
+		padding: 55px 0 0 0;
+		display: flex;
+
+		.btn {
+			margin-right: 27px;
+
+			&:hover {
+				@include fillWhite();
+			}
+		}
+	}
+}
+
+// Latest Updates - section
+.latest-updates {
+	padding: 90px 0 80px 0;
+	min-height: 450px;
+
+	.col-md-6 {
+		&:nth-of-type(1) {
+			.blog-item {
+				padding-right: 20px
+			}
+		}
+
+		&:nth-of-type(2) {
+			.blog-item {
+				padding-left: 20px
+			}
+		}
+	}
+
+	&__subtitle {
+		@extend .sub-title-lg;
+		text-align: center;
+		padding: 0 0 10px 0
+	}
+
+	&__title {
+		@extend .title-lg;
+		text-align: center;
+		padding: 0 0 56px 0;
+	}
+
+	&__content {
+		padding: 0 20px 0 20px;
+		margin-top: -25px;
+		position: relative;
+		z-index: 20;
+	}
+
+	&__img {
+		position: relative;
+		z-index: 10;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__blogTitle-container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__blog-title {
+		@extend .sub-title-lg2;
+		flex: 1;
+		padding-left: 25px;
+	}
+
+	&__post-date {
+		width: 68px;
+		min-width: 68px;
+		height: 68px;
+		background: $primary;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__post-date-indent {
+		@include font-size(16px);
+		color: $white;
+		font-weight: $semibold;
+
+		span {
+			@include font-size(24px);
+			display: block;
+		}
+	}
+
+	&__content-indent {
+		padding: 20px;
+		background: $white;
+		box-shadow: 0 0 5px $darker_16;
+
+		p {
+			@extend .paragraph-style3;
+			margin: 0;
+			padding: 20px 0 0 0;
+
+			a {
+				color: $redDarker;
+				text-decoration: underline;
+				@include transition();
+
+				&:hover {
+					color: $primary;
+					text-decoration: none;
+				}				
+			}
+		}
+	}
+}
+
+// Events
+.upcoming-events {
+	background: url("../img/events-bg.png") center top no-repeat;
+	background-size: cover;	
+	padding: 90px 0;
+
+	&__subtitle {
+		@extend .sub-title-lg;
+		color: $white;
+		text-align: center;
+		padding: 0 0 10px 0
+	}
+
+	&__title {
+		@extend .title-lg;
+		text-align: center;
+		color: $white;
+		padding: 0 0 56px 0;
+	}
+
+	&__event {
+		background: $white;
+		border-radius: 8px;
+		padding: 22px;
+		box-shadow: 0 0 6px $darker_16;
+		display: flex;
+	}
+
+	&__img {
+		width: 126px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 4px;
+		}
+	}
+
+	&__content {
+		flex: 1;
+		padding: 0 0 0 20px;
+
+		h3 {
+			@extend .paragraph-style2;
+			font-weight: $bold;
+			margin: 0;
+			padding: 20px 0 25px 0;
+		}
+
+		a {
+			color: $redDarker;
+			text-decoration: underline;
+			@include transition();
+			@include font-size(14px);
+			font-weight: $semibold;
+
+			&:hover {
+				color: $primary;
+				text-decoration: none;
+			}				
+		}
+	}
+
+	&__date {
+		background: url("../img/calendar-icon.svg") 0 0 no-repeat;
+		@include font-size(14px);
+		color: $darker_alt2;
+		font-weight: $semibold;
+		padding: 0 0 2px 25px;
+	}
+}

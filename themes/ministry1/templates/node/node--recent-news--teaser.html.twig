@@ -1,0 +1,17 @@
+                    {# <div class="col-md-4"> #}
+                        <div class="main-box-img">
+                            <div class="img-box">
+                               {{content.field_image}}
+                            </div>
+                            <div class="content-box">
+                                <div class="date">
+                                    <img src="themes/ministry1/images/calendar.png" alt="" />
+                                    <span class="caldr-text">{{content.field_date[0]['#markup'] |date('d M Y')}}</span>
+                                </div>
+                                <h4 class="sub-tt">{{label}}</h4>
+                                <p class="text1">{{content.field_description}}
+                                </p>
+                                <a href="{{url}}" class="btn-1">Read More</a>
+                            </div>
+                        </div>
+                    {# </div> #}
